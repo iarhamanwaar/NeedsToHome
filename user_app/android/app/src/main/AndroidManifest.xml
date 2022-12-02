@@ -23,7 +23,7 @@
         <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDjLjHZNqzBkRvVODDQsojp6GcPB0_5teo"/>
+            android:value="AIzaSyD0yXncN3d03MXwCtHYKKyJb1FqN7qdQoU"/>
 
 
 
