@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>981317664754-q0navbcnsk899deot04i0ia9tfhj9gbt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.981317664754-q0navbcnsk899deot04i0ia9tfhj9gbt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>981317664754-or2e438mjmpv4jbghsid6jp6clrid747.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBhJEJJop7rExSJEKoak29i1QmTUwe2VFA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>981317664754</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.okonline.ok</string>
+	<key>PROJECT_ID</key>
+	<string>okonline-1cb1f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>okonline-1cb1f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:981317664754:ios:b5ab62cae9203e4ec5f56b</string>
+</dict>
+</plist>

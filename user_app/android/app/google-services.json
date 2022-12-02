@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "1090231107467",
+    "project_id": "needstohome-dev",
+    "storage_bucket": "needstohome-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090231107467:android:1e3b58b9ba869b24ea798e",
+        "android_client_info": {
+          "package_name": "com.krishlabs.n2h"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArsqf1BKhAR29Hhfe4AAGTnyhYCBNKXKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090231107467:android:6ef4088b6c097a89ea798e",
+        "android_client_info": {
+          "package_name": "com.krishlabs.needstohome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArsqf1BKhAR29Hhfe4AAGTnyhYCBNKXKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090231107467:android:42e29af341fbc278ea798e",
+        "android_client_info": {
+          "package_name": "com.krishlabs.usern2h"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArsqf1BKhAR29Hhfe4AAGTnyhYCBNKXKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090231107467:android:fb656629af6356a3ea798e",
+        "android_client_info": {
+          "package_name": "com.krishlabs.vendorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArsqf1BKhAR29Hhfe4AAGTnyhYCBNKXKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090231107467-li3geua1t1sf1nmsmhjfujck42mt28ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

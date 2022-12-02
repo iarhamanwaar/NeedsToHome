@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter application.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_multivendor">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Multi Super Admin</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.js"></script>
+  <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
+  <style>
+     #nlpt {
+        animation: a-s .5s 2.5s 1 forwards;
+        background-color: #f1f1f1;
+        height: 4px;
+        margin: 20px auto 20px;
+        opacity: 0;
+        overflow: hidden;
+        position: relative;
+        width: 300px
+    }
+
+    #nlpt::before {
+        animation: a-lb 20s 3s linear forwards;
+        background-color: #db4437;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transform: translateX(-300px);
+        width: 100%
+    }
+    @keyframes a-lb {
+        0% {
+            transform: translateX(-300px)
+        }
+
+        5% {
+            transform: translateX(-240px)
+        }
+
+        15% {
+            transform: translateX(-30px)
+        }
+
+        25% {
+            transform: translateX(-30px)
+        }
+
+        30% {
+            transform: translateX(-20px)
+        }
+
+        45% {
+            transform: translateX(-20px)
+        }
+
+        50% {
+            transform: translateX(-15px)
+        }
+
+        65% {
+            transform: translateX(-15px)
+        }
+
+        70% {
+            transform: translateX(-10px)
+        }
+
+        95% {
+            transform: translateX(-10px)
+        }
+
+        100% {
+            transform: translateX(-5px)
+        }
+    }
+
+    @keyframes a-s {
+        100% {
+            opacity: 1
+        }
+    }
+
+    @keyframes a-h {
+        100% {
+            opacity: 0
+        }
+    }
+
+    @keyframes a-nt {
+        100% {
+            transform: none
+        }
+    }
+
+    @keyframes a-e {
+        43% {
+            animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+            transform: scale(.75)
+        }
+
+        60% {
+            animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+            transform: translateY(-16px)
+        }
+
+        77% {
+            animation-timing-function: cubic-bezier(.16, 0, .2, 1);
+            transform: none
+        }
+
+        89% {
+            animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+            transform: translateY(-5px)
+        }
+
+        100% {
+            transform: none
+        }
+    }
+
+    @keyframes a-ef {
+        24% {
+            animation-timing-function: cubic-bezier(.8, 0, .6, 1);
+            transform: scaleY(.42)
+        }
+
+        52% {
+            animation-timing-function: cubic-bezier(.63, 0, .2, 1);
+            transform: scaleY(.98)
+        }
+
+        83% {
+            animation-timing-function: cubic-bezier(.8, 0, .84, 1);
+            transform: scaleY(.96)
+        }
+
+        100% {
+            transform: none
+        }
+    }
+
+    @keyframes a-efs {
+        24% {
+            animation-timing-function: cubic-bezier(.8, 0, .6, 1);
+            opacity: .3
+        }
+
+        52% {
+            animation-timing-function: cubic-bezier(.63, 0, .2, 1);
+            opacity: .03
+        }
+
+        83% {
+            animation-timing-function: cubic-bezier(.8, 0, .84, 1);
+            opacity: .05
+        }
+
+        100% {
+            opacity: 0
+        }
+    }
+
+    @keyframes a-es {
+        24% {
+            animation-timing-function: cubic-bezier(.8, 0, .6, 1);
+            transform: rotate(-25deg)
+        }
+
+        52% {
+            animation-timing-function: cubic-bezier(.63, 0, .2, 1);
+            transform: rotate(-42.5deg)
+        }
+
+        83% {
+            animation-timing-function: cubic-bezier(.8, 0, .84, 1);
+            transform: rotate(-42deg)
+        }
+
+        100% {
+            transform: rotate(-43deg)
+        }
+    }
+
+    .invfr {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        border: 0
+    }
+
+    .msgb {
+        position: absolute;
+        right: 0;
+        font-size: 12px;
+        font-weight: normal;
+        color: #000;
+        padding: 20px
+    }
+  </style>
+</head>
+
+<body>
+<div class="loader">
+
+  <div style="bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0">
+    <div
+            style="animation:a-h .5s 1.25s 1 linear forwards,a-nt .6s 1.25s 1 cubic-bezier(0,0,.2,1);background:#eee;border-radius:50%;height:800px;left:50%;margin:-448px -400px 0;position:absolute;top:50%;transform:scale(0);width:800px">
+    </div>
+  </div>
+  <img src="assets/assets/img/logo.png"
+       style="margin:auto;display:block;margin-bottom:0 !important;margin-top:180px !important;width:200px;height:200px" alt="">
+  <!--  <img src="assets/assets/img/pageloader.gif" style="margin:auto;display:block;margin-bottom:0 !important;margin-top:180px !important"/>-->
+  <div id="nlpt"></div>
+  <h2 style="margin:auto;display:block;margin-bottom:0 !important;text-align:center;color:black">Loading Your Cloud Store...</h2>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-messaging.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkxrDNs5FgvtYEnp1KeAtUyEdKGPHDkf8"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+        apiKey: "AIzaSyAt6uE8g4SglT0F4TQBUtyC64IBORa6ZtA",
+  authDomain: "multi-super-store.firebaseapp.com",
+  projectId: "multi-super-store",
+  storageBucket: "multi-super-store.appspot.com",
+  messagingSenderId: "292705944206",
+  appId: "1:292705944206:web:8796d6a366787f30b2ffdf",
+  measurementId: "G-NNBCDRTVZP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+  <script type="text/javascript">
+     pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js";
+  </script>
+  <script src="main.dart.js?version=2.4" type="application/javascript"></script>
+</body>
+</html>
