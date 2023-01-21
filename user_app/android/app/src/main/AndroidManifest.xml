@@ -23,9 +23,7 @@
         <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD0yXncN3d03MXwCtHYKKyJb1FqN7qdQoU"/>
-
-
+            android:value="AIzaSyBnvFzPo4NV4R6niIw34cXdZYuM6gIsLns"/>
 
         <activity
             android:name="com.krishlabs.needstohome.MainActivity"
@@ -42,7 +40,6 @@
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme"
                 />
-
 
             <!-- Displays an Android View that continues showing the launch screen
                  Drawable until Flutter paints its first frame, then this splash
